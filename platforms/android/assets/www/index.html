@@ -1,37 +1,158 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="format-detection" content="telephone=no" />
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+	<head>
+		<meta charset="utf-8" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
 
-        <title>Pistas Aeromodelismo Brasil</title>
+		<title>Pistas Aeromodelismo Brasil</title>
 
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.css" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.css" />
 
-	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.js"></script>
-	<script type="text/javascript" src="cordova.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-    </head>
-    <body data-role="page">
-	<div data-role="panel" data-display="overlay" id="menu">
-	    <div data-role="navbar">
-	        <ul>
-		    <li><a href="#" class="ui-btn-active">One</a></li>
-		    <li><a href="#" class="ui-btn-active">Dois</a></li>
-		    <li><a href="#" class="ui-btn-active">Tres</a></li>
-		    <li><a href="#" class="ui-btn-active">Quatro</a></li>
-	        </ul>
-	    </div>
-	</div>
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.js"></script>
+		<script type="text/javascript" src="cordova.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+	</head>
+	<body>
+		<div data-role="page" id="paginaInicial">
+			<div data-role="panel" data-display="overlay" id="menuInicial">
+				<ul data-role="listview">
+					<li>
+						<a href="#buscarPista" data-rel="close">Encontrar Pista</a>
+					</li>
+					<li>
+						<a href="#cadastrarPista" data-rel="close">Cadastrar Pista</a>
+					</li>
+					<li>
+						<a href="#encontrarEvento" data-rel="close">Encontrar Evento</a>
+					</li>
+					<li>
+						<a href="#cadastrarEvento" data-rel="close">Cadastrar Evento</a>
+					</li>
+				</ul>
+			</div>
 
-        <div data-role="header">
-	    <a href="#menu" class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-btn-mini">Menu</a>
-	    <h1>AeroApp</h1>
-	</div>
-	<div data-role="main" class="ui-content">
-	    Conteudo da Pagina.
-	</div>
-    </body>
+			<div data-role="header">
+				<a href="#menuInicial" data-icon="grid" class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-btn-mini">Menu</a>
+				<h1>AeroApp</h1>
+			</div>
+
+			<div data-role="main" class="ui-content">
+				Inicio.
+			</div>
+		</div>
+		
+		<div data-role="page" id="buscarPista">
+			<div data-role="panel" data-display="overlay" id="menuBuscarPista">
+				<ul data-role="listview">
+					<li>
+						<a href="#paginaInicial" data-rel="close">Inicio</a>
+					</li>
+					<li>
+						<a href="#cadastrarPista" data-rel="close">Cadastrar Pista</a>
+					</li>
+					<li>
+						<a href="#encontrarEvento" data-rel="close">Encontrar Evento</a>
+					</li>
+					<li>
+						<a href="#cadastrarEvento" data-rel="close">Cadastrar Evento</a>
+					</li>
+				</ul>
+			</div>
+
+			<div data-role="header">
+				<a href="#menuBuscarPista" data-icon="grid" class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-btn-mini">Menu</a>
+				<h1>AeroApp</h1>
+			</div>
+
+			<div data-role="main" class="ui-content">
+				Encontrar Pistas.
+			</div>
+		</div>
+		
+		<div data-role="page" id="cadastrarPista">
+			<div data-role="panel" data-display="overlay" id="menuCadastrarPista">
+				<ul data-role="listview">
+					<li>
+						<a href="#paginaInicial" data-rel="close">Inicio</a>
+					</li>
+					<li>
+						<a href="#buscarPista" data-rel="close">Encontrar Pista</a>
+					</li>
+					<li>
+						<a href="#encontrarEvento" data-rel="close">Encontrar Evento</a>
+					</li>
+					<li>
+						<a href="#cadastrarEvento" data-rel="close">Cadastrar Evento</a>
+					</li>
+				</ul>
+			</div>
+
+			<div data-role="header">
+				<a href="#menuCadastrarPista" data-icon="grid" class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-btn-mini">Menu</a>
+				<h1>AeroApp</h1>
+			</div>
+
+			<div data-role="main" class="ui-content">
+				Cadastrar Pistas.
+			</div>
+		</div>
+		
+		<div data-role="page" id="encontrarEvento">
+			<div data-role="panel" data-display="overlay" id="menuEncontrarEvento">
+				<ul data-role="listview">
+					<li>
+						<a href="#paginaInicial" data-rel="close">Inicio</a>
+					</li>
+					<li>
+						<a href="#buscarPista" data-rel="close">Encontrar Pista</a>
+					</li>
+					<li>
+						<a href="#cadastrarPista" data-rel="close">Cadastrar Pista</a>
+					</li>
+					<li>
+						<a href="#cadastrarEvento" data-rel="close">Cadastrar Evento</a>
+					</li>
+				</ul>
+			</div>
+
+			<div data-role="header">
+				<a href="#menuEncontrarEvento" data-icon="grid" class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-btn-mini">Menu</a>
+				<h1>AeroApp</h1>
+			</div>
+
+			<div data-role="main" class="ui-content">
+				Encontrar Evento.
+			</div>
+		</div>
+		
+		<div data-role="page" id="cadastrarEvento">
+			<div data-role="panel" data-display="overlay" id="menuCadastrarEvento">
+				<ul data-role="listview">
+					<li>
+						<a href="#paginaInicial" data-rel="close">Inicio</a>
+					</li>
+					<li>
+						<a href="#buscarPista" data-rel="close">Encontrar Pista</a>
+					</li>
+					<li>
+						<a href="#cadastrarPista" data-rel="close">Cadastrar Pista</a>
+					</li>
+					<li>
+						<a href="#encontrarEvento" data-rel="close">Encontrar Evento</a>
+					</li>
+				</ul>
+			</div>
+
+			<div data-role="header">
+				<a href="#menuCadastrarEvento" data-icon="grid" class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-btn-mini">Menu</a>
+				<h1>AeroApp</h1>
+			</div>
+
+			<div data-role="main" class="ui-content">
+				Cadastrar Evento.
+			</div>
+		</div>
+	</body>
 </html>
