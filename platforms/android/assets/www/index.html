@@ -15,6 +15,15 @@
 		<script type="text/javascript" src="js/index.js"></script>
 	</head>
 	<body>
+		<div data-role="page" id="login">
+			<h2>Faça seu Login</h2>
+			<label for="usuario" class="ui-hidden-accessible">Usuário:</label>
+	        <input id="usuario" value="" placeholder="Usuário" type="text">
+	        <label for="senha" class="ui-hidden-accessible">Senha:</label>
+	        <input id="senha" value="" placeholder="Senha" type="password">
+	        <button id="autenticarBtn" class="ui-btn">Entrar</button>
+		</div>
+
 		<div data-role="page" id="paginaInicial">
 			<div data-role="panel" data-display="overlay" id="menuInicial">
 				<ul data-role="listview">
@@ -85,9 +94,7 @@
 			<div data-role="panel" data-display="overlay" id="menuBuscarPista">
 				<ul data-role="listview">
 					<li>
-						<a id="paginaInicialLink" href="#paginaInicial" data-rel="close"
-						   class="show-page-loading-msg" data-theme="b" data-textonly="false"
-						   data-textvisible="true" data-msgtext="Carregando..." data-inline="true">Inicio</a>
+						<a id="paginaInicialLink" href="#paginaInicial" data-rel="close">Inicio</a>
 					</li>
 					<li>
 						<a href="#cadastrarPista" data-rel="close">Cadastrar Pista</a>
