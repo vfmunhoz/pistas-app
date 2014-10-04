@@ -1,4 +1,5 @@
 /home/vmunhoz/workspaces/Pistas/pistas-app/platforms/android/ant-build/classes.dex : \
+/home/vmunhoz/workspaces/Pistas/pistas-app/platforms/android/ant-build/classes/org/apache/cordova/splashscreen/SplashScreen.class \
 /home/vmunhoz/workspaces/Pistas/pistas-app/platforms/android/ant-build/classes/br/com/pistas/app/PistasdeAeromodelismo.class \
 /home/vmunhoz/workspaces/Pistas/pistas-app/platforms/android/ant-build/classes/br/com/pistas/app/BuildConfig.class \
 /home/vmunhoz/workspaces/Pistas/pistas-app/platforms/android/ant-build/classes/br/com/pistas/app/R$xml.class \

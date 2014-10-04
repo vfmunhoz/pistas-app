@@ -6,10 +6,14 @@
 /home/vmunhoz/workspaces/Pistas/pistas-app/platforms/android/res/drawable-land-hdpi/screen.png \
 /home/vmunhoz/workspaces/Pistas/pistas-app/platforms/android/res/drawable/icon.png \
 /home/vmunhoz/workspaces/Pistas/pistas-app/platforms/android/res/drawable-ldpi/icon.png \
+/home/vmunhoz/workspaces/Pistas/pistas-app/platforms/android/res/drawable-ldpi/splash.jpg \
 /home/vmunhoz/workspaces/Pistas/pistas-app/platforms/android/res/drawable-xhdpi/icon.png \
+/home/vmunhoz/workspaces/Pistas/pistas-app/platforms/android/res/drawable-xhdpi/splash.jpg \
 /home/vmunhoz/workspaces/Pistas/pistas-app/platforms/android/res/drawable-mdpi/icon.png \
+/home/vmunhoz/workspaces/Pistas/pistas-app/platforms/android/res/drawable-mdpi/splash.jpg \
 /home/vmunhoz/workspaces/Pistas/pistas-app/platforms/android/res/drawable-port-xhdpi/screen.png \
 /home/vmunhoz/workspaces/Pistas/pistas-app/platforms/android/res/drawable-hdpi/icon.png \
+/home/vmunhoz/workspaces/Pistas/pistas-app/platforms/android/res/drawable-hdpi/splash.jpg \
 /home/vmunhoz/workspaces/Pistas/pistas-app/platforms/android/res/drawable-land-ldpi/screen.png \
 /home/vmunhoz/workspaces/Pistas/pistas-app/platforms/android/res/drawable-port-mdpi/screen.png \
 /home/vmunhoz/workspaces/Pistas/pistas-app/platforms/android/res/drawable-land-xhdpi/screen.png \
