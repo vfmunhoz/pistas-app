@@ -19,9 +19,17 @@ function validarCampo(valor) {
 	return false;
 }
 
-function executarServico(enderecoServico, entradaServico, callbackSucesso) {
+function executarServicoPost(enderecoServico, entradaServico, callbackSucesso) {
+	executarServico('POST', enderecoServico, entradaServico, callbackSucesso)
+}
+
+function executarServicoGet(enderecoServico, entradaServico, callbackSucesso) {
+	executarServico('GET', enderecoServico, entradaServico, callbackSucesso)
+}
+
+function executarServico(metodo, enderecoServico, entradaServico, callbackSucesso) {
 	$.ajax({
-	    type: "POST",
+	    type: metodo,
 	    url: 'http://192.168.0.16:8081/PistasServices/rest/' + enderecoServico,
 	    dataType: 'json',
 	    contentType: "application/json",
