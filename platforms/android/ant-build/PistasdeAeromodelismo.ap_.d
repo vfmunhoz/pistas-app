@@ -46,4 +46,5 @@
 /home/vmunhoz/workspaces/Pistas/pistas-app/platforms/android/assets/www/plugins/org.apache.cordova.splashscreen/www/splashscreen.js \
 /home/vmunhoz/workspaces/Pistas/pistas-app/platforms/android/assets/www/css/index.css \
 /home/vmunhoz/workspaces/Pistas/pistas-app/platforms/android/assets/www/js/index.js \
+/home/vmunhoz/workspaces/Pistas/pistas-app/platforms/android/assets/www/js/framework.js \
 /home/vmunhoz/workspaces/Pistas/pistas-app/platforms/android/ant-build/AndroidManifest.xml \
