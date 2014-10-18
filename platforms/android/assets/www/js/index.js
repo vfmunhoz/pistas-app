@@ -1,5 +1,17 @@
 $(document).ready(function() {
 	$(document).bind('deviceready', function() {
+		if(window.localStorage.key('autenticado')) {
+			var dataLogin = window.localStorage.key('validadeLogin');
+			
+			if(new Date().getTime() > new Date(dataLogin).getTime()) {
+				window.localStorage.removeItem('autenticado');
+			} else {
+				carregarTelaInicial();
+
+				location.hash = 'paginaInicial';
+			}
+		}
+
 		navigator.splashscreen.hide();
 	});
 
@@ -29,6 +41,8 @@ $(document).ready(function() {
 	    	
 	    	if(data.autenticado == true) {
 	    		carregarTelaInicial();
+	    		window.localStorage.setItem('autenticado', data.autenticado);
+	    		window.localStorage.setItem('validadeLogin', data.validadeLogin);
 
 	    		location.hash = 'paginaInicial';
 	    	} else {
