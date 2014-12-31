@@ -30,7 +30,7 @@ function executarServicoGet(enderecoServico, entradaServico, callbackSucesso) {
 function executarServico(metodo, enderecoServico, entradaServico, callbackSucesso) {
 	$.ajax({
 	    type: metodo,
-	    url: 'http://192.168.0.16:8081/PistasServices/rest/' + enderecoServico,
+	    url: 'http://192.168.0.15:8081/PistasServices/rest/' + enderecoServico,
 	    dataType: 'json',
 	    contentType: "application/json",
 		data: JSON.stringify(entradaServico),

@@ -16,6 +16,9 @@
 		<script type="text/javascript" src="js/index.js"></script>
 	</head>
 	<body>
+		<div data-role="page" id="entrada">
+		</div>
+
 		<div data-role="page" id="login">
 			<h2>Faça seu Login</h2>
 			<label for="usuario" class="ui-hidden-accessible">Usuário:</label>
@@ -139,6 +142,34 @@
 
 			<div data-role="main" class="ui-content">
 				Encontrar Evento.
+			</div>
+		</div>
+
+		<div data-role="page" id="detalhesEvento">
+			<div data-role="panel" data-display="overlay" id="menuEncontrarEvento">
+				<ul data-role="listview">
+					<li>
+						<a href="#paginaInicial" data-rel="close">Inicio</a>
+					</li>
+					<li>
+						<a href="#buscarPista" data-rel="close">Encontrar Pista</a>
+					</li>
+					<li>
+						<a href="#cadastrarPista" data-rel="close">Cadastrar Pista</a>
+					</li>
+					<li>
+						<a href="#cadastrarEvento" data-rel="close">Cadastrar Evento</a>
+					</li>
+				</ul>
+			</div>
+
+			<div data-role="header">
+				<a href="#menuEncontrarEvento" data-icon="grid" class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-btn-mini">Menu</a>
+				<h1>AeroApp</h1>
+			</div>
+
+			<div data-role="main" class="ui-content">
+				<span id="nomeEvento"></span>
 			</div>
 		</div>
 

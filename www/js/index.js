@@ -10,6 +10,8 @@ $(document).ready(function() {
 
 				location.hash = 'paginaInicial';
 			}
+		} else {
+			location.hash = 'login';
 		}
 
 		navigator.splashscreen.hide();
@@ -105,13 +107,22 @@ function carregarTelaInicial() {
 
 		esconderCarregando();
 	});
-}
+};
 
 function montarEstruturaEvento(val) {
-	var estruturaEvento = '<li><a href="#encontrarEvento"> <h2>';
+	var estruturaEvento = '<li><a onclick="carregarEvento(';
+	estruturaEvento = estruturaEvento.concat(val.codigoEvento).concat(');"> <h2>');
 	estruturaEvento = estruturaEvento.concat(val.local).concat('</h2>');
 	estruturaEvento = estruturaEvento.concat('<p><strong>').concat(val.nome).concat('</strong></p>');
 	estruturaEvento = estruturaEvento.concat('<p>').concat(val.descricao).concat('</p></a></li>');
 	
 	return estruturaEvento;
+};
+
+function carregarEvento(evento) {
+	executarServicoGet('pistas_evento/detalhes_evento', {codigoEvento : evento}, function(data) {
+		$('#nomeEvento').text(data.nome);
+
+		location.hash = 'detalhesEvento';
+	});
 }
